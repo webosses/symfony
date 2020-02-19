@@ -45,33 +45,9 @@ class DefaultController extends Controller
 			
 			 }
 			 
-			/* $pattern='/ca[fk]e/';
-			 $str='I had cake in a cafe yesterday';
-			$m= preg_match($pattern,$str);
-			$ma=preg_match_all($pattern,$str,$arr);
-			echo 'preg_match='.$m;
-			echo '<br>';
-			echo 'preg_match_all='.$ma.print_r($arr);
-			*/
 			
-			$text = "Earth, revolves  around\nthe\tSun";
-			$p='/[\s,]+/';
-			$r=preg_split($p,$text);
-			print_r($r);
-			//$rp=preg_replace($p,'-',$text);
-		//	echo $rp;
-		//	echo '<br>';
-			//$rp2=str_replace(' ','-',$text);
-		//	echo $rp2;
-		$input="Ageayoung8\nage 99 age 99\nagebc88 is old";
-		$input1= "Color red is more visible than \ncolor blue in daylight.";
-		$input1= "age red is more visible than \nAge blue in daylight.";
-		$in= "\item $\mu_{A_T}$ and $\sigma_{A_T}$, the mean and standard deviation of the tiles area $A_T$, respectively;
-    \item $\rho_\text{filler}$, the ratio between the filler area and the overall mosaic are, computed as $\rho_\text{filler}=\frac{\sum_{T \in \mathcal{T} A_T}}{A}$, being $A$ the area of the mosaic;";
-	
-		$r=preg_match_all('/\$.+\$/',$in,$arr);
-		print_r($arr);
 			
+		
 		 return $this->render('default/new.html.twig',array('form'=>$form->createView()));
 		 
 		
